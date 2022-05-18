@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stens resume</title>
     <link rel="stylesheet" href="./Resources/style.css">
-    <script src="./Resources/script.js"></script>
+    
 </head>
 <body>
 
 <!--header--> 
 
     <header>
+        <nav>
+            <ul id="nav">
+                <li><a href="(.qualifications)">Qualifications</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Language skills</a></li>
+            </ul>
+        </nav>
         <div id="info">
             <h1>Sten Tuisk</h1>
             <br>
@@ -22,15 +30,7 @@
                 <li><h2>sten.tuisk@gmail.com</h2></li>
             </ul>
         </div>
-        <nav>
-            <ul id="nav">
-                <li><a href="#">Qualifications</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Language skills</a></li>
-            </ul>
-        </nav>
-        
+             
     </header>
 
     <!--main-->
@@ -42,22 +42,83 @@
 
             <div class="banner">
                 <div class="banner_text">
-                    <h1>Pilot</h1>
+                    <h1 id="pilot_button" onclick="switchMain">Pilot</h1>
                 </div>
+            </div>
+            <div class="qualifications">
+                <h2>Qualifications</h2>
+                <p><em>So far in my career I'ce been working as a <em>First Officer</em> flying <a href="https://en.wikipedia.org/wiki/Dassault_Falcon_2000" target="_blank">Falcon 2000</a> and before that working as a <strong>Flight Instructor</strong> and a <strong>Pilot</strong> flying arial works flights. Currently I am holding an <strong>ATPL</strong>, <strong>Class 1</strong> medical and <strong>ICAO level 5</strong> in English.</em></p>
+                <ul>
+                    <li>1940 total hours</li>
+                    <li>770 PIC hours</li>
+                    <li>1200 hours on multi-engine aircraft</li>
+                    <li>445 hours as a flight instructor</li>
+                    <li>1030 hours on Falcon 2000</li>
+                </ul>
+            </div>
+            <div class="experience">
+                <div class="exp">
+                    <h2>Previous employers</h2>
+                </div>
+                <div class="exp">
+                    <div class="employer">
+                        <h3><a href="https://www.fort.aero/" target="_blank">Fort Aero</a></h3>
+                        <h4><em>First Officer, Falcon 2000, 2017-2002</em></h4>
+                    </div>
+                    <div class="employer">
+                        <h3><a href="https://www.pakkeravio.ee/" target="_blank">Pakker Avio</a></h3>
+                        <h4><em>Flight Instructor/Pilot, 2015-2019</em></h4>
+                    </div>
+                    <div class="employer">
+                        <h3><a href="https://lennuakadeemia.ee/en" target="_blank">Estonian Aviation Academy</a></h3>
+                        <h4><em>Guest lecturer, 2015-2017</em></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <h2>Education</h2>
+                <div class="edu">
+                    <h3><a href="https://lennuakadeemia.ee/en" target="_blank">Estonian Aviation Academy</a></h3>
+                    <h4><em>Diploma of Higher Professional Education in Aircraft Piloting, 2010-2015</em></h4>
+                </div>
+            </div>
+            <div class="language">
+                <h2>Language skills</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Language</th>
+                            <th scope="col">Level</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>Estonian</td>
+                        <td>Fluent, mother tongue</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>Fluent, ICAO level 5</td>
+                    </tr>
+                    <tr>
+                        <td>Russian</td>
+                        <td>Basic</td>
+                    </tr>
+                </table>
             </div>
 
         </div>
 
     <!--main2-->
-        <div id="developer"></div>
+        <div id="developer">
 
             <div id="dev_banner" class="banner">
                 <div class="banner_text">
-                    <h1>Developer</h1>
+                    <h1 id="dev_button" onclick="switchBack">Developer</h1>
                 </div>
             </div>
             <div id="pic"></div>
-
+        </div>
+        <script src="./Resources/script.js"></script>
     </main>
 </body>
 </html>

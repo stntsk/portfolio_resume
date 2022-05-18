@@ -14,6 +14,7 @@ html {
     font-size: 16px;
     box-sizing: border-box;
     font-family: 'Roboto';
+    background-color: #efefef;
 }
 
 body {
@@ -24,13 +25,13 @@ body {
 
 header {
     background-color: #efefef;
-    height: 200px;
+    height: 220px;
 }
 
 header h1 {
     text-align: center;
-    color: #333333;
     font-size: 64px;
+    padding-top: 4rem;
     margin: 0;
 }
 
@@ -51,10 +52,12 @@ header li {
 }
 
 nav {
+    top: 0;
+    position: fixed;
     top: 120;
     width: 100%;
     z-index: 5;
-    
+    border: solid 1px #ff3b3f;
 }
 
 nav ul {
@@ -88,6 +91,11 @@ nav a:hover {
 
 }
 
+.banner h1:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .banner_text {
     background-color: #333333;
     height: 20%;
@@ -114,6 +122,10 @@ nav a:hover {
     background-size: cover;
 }
 
+#pilot {
+    display: block;
+}
+
 
 
 /*banner2*/
@@ -126,3 +138,115 @@ nav a:hover {
     background-size: cover;
 }
 
+#developer {
+    display: none;
+}
+
+/*qualifications*/
+
+
+
+.qualifications h2 {
+    color: #333333;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.qualifications p {
+    margin: 0.5rem 2rem;
+    font-size: 1.5rem;
+}
+
+.qualifications ul {
+    margin-left: 4rem;
+    font-size: 1.5rem;
+}
+
+.qualifications a {
+    color: #333333;
+}
+/*Pilot experience*/
+
+#pilot .experience {
+    display: flex;
+    flex-direction: column;
+    background-color: #caebf2;
+    margin: 2rem;
+}
+
+#pilot .exp {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#pilot .employer {
+    background-color: #333333;
+    padding: 1rem;
+    color: #efefef;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#pilot h2 {
+    font-size: 3rem;
+    color: #333333;
+}
+
+.employer a {
+    text-decoration: underline;
+    color: #efefef;
+}
+
+.employer a:hover {
+    color: #333333;
+    background-color: #efefef;
+}
+
+/*education*/
+
+.education {
+    text-align: center;
+}
+
+.education .edu {
+    background-color: #333333;
+    padding: 1rem;
+    color: #efefef;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 33%;
+    margin-left: 33%;
+}
+
+.edu a {
+    color: #efefef;
+}
+
+.edu a:hover {
+    color: #333333;
+    background-color: #efefef;
+}
+
+/*language*/
+
+.language {
+    text-align: center;
+    background-color: #caebf2;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.language table {
+    border: solid 3px #333333;
+    margin:0 3rem 3rem 3rem;
+}
+
+.language th {
+    border: solid 2px #333333;
+}
+
+.language td {
+    border: solid 1px #333333;
+}
