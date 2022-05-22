@@ -15,6 +15,8 @@ html {
     box-sizing: border-box;
     font-family: 'Roboto';
     background-color: #efefef;
+    color: #333;
+    width: 100%;
 }
 
 body {
@@ -57,13 +59,17 @@ nav {
     top: 120;
     width: 100%;
     z-index: 5;
-    border: solid 1px #ff3b3f;
+    border: solid 1px #76323f;
+}
+
+#dev_nav {
+    display: none;
 }
 
 nav ul {
     display: flex;
     justify-content: space-around;
-    background-color: #caebf2;
+    background-color: #76323f;
     margin: 0;
 }
 
@@ -78,7 +84,40 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    background-color: #ff3b3f;
+    background-color: #a9a9a9;
+    color: #333;
+}
+
+@media only screen and (max-width: 450px) {
+
+    header {
+        height: 220px;
+    }
+    
+    header h1 {
+        padding-top: 1rem;
+    }
+    
+    header h2 {
+        font-size: 1rem;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav {
+        height: 3rem;
+        position: static;
+        background-color: #76323f;
+        width: 100%;
+        min-width: 320px;
+    }
+
+    #contact {
+        padding: 0 1rem;
+        flex-wrap: wrap;
+    }
 }
 
 /*banner*/
@@ -126,20 +165,12 @@ nav a:hover {
     display: block;
 }
 
-
-
-/*banner2*/
-
-#dev_banner {
-    background-image: url('./Pictures/matrix.jpg');
-    height: 500px;
-    width: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#developer {
-    display: none;
+@media only screen and (max-width: 450px) {
+    #pilot .banner {
+        width: 450px;
+        height: auto;
+        min-height: 300px;
+    }
 }
 
 /*qualifications*/
@@ -167,7 +198,7 @@ nav a:hover {
 }
 /*Pilot experience*/
 
-#pilot .experience {
+.experience {
     display: flex;
     flex-direction: column;
     background-color: #caebf2;
@@ -188,9 +219,10 @@ nav a:hover {
     margin-bottom: 2rem;
 }
 
-#pilot h2 {
+.experience h2 {
     font-size: 3rem;
     color: #333333;
+    text-align: center;
 }
 
 .employer a {
@@ -241,12 +273,51 @@ nav a:hover {
 .language table {
     border: solid 3px #333333;
     margin:0 3rem 3rem 3rem;
+    border-spacing: 0;
 }
 
 .language th {
-    border: solid 2px #333333;
+    border: solid 2px #333;
+    background-color: #76323f;
+    color: #a9a9a9;
 }
 
 .language td {
     border: solid 1px #333333;
+    margin: 0;
+}
+
+/*banner2*/
+
+#dev_banner {
+    background-image: url('./Pictures/matrix.jpg');
+    height: 500px;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 450px) {
+    #dev_banner {
+        width: 450px;
+        height: auto;
+        min-height: 300px;
+    }
+}
+
+#developer {
+    display: none;
+}
+
+#developer .experience {
+    text-align: center;
+}
+
+
+
+/*footer*/
+
+footer {
+    height: 3rem;
+    background-color: #333;
 }

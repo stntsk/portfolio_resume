@@ -13,12 +13,20 @@
 <!--header--> 
 
     <header>
-        <nav>
+        <nav id="pilot_nav">
             <ul id="nav">
-                <li><a href="(.qualifications)">Qualifications</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Language skills</a></li>
+                <li><a href="#pil_qual">Qualifications</a></li>
+                <li><a href="#pil_exp">Experience</a></li>
+                <li><a href="#pil_ed">Education</a></li>
+                <li><a href="#pil_lang">Language skills</a></li>
+            </ul>
+        </nav>
+        <nav id="dev_nav">
+            <ul id="nav">
+                <li><a href="#dev_qual">Qualifications</a></li>
+                <li><a href="#dev_exp">Experience</a></li>
+                <li><a href="#dev_ed">Education</a></li>
+                 <li><a href="#dev_lang">Language skills</a></li>
             </ul>
         </nav>
         <div id="info">
@@ -42,10 +50,10 @@
 
             <div class="banner">
                 <div class="banner_text">
-                    <h1 id="pilot_button" onclick="switchMain">Pilot</h1>
+                    <h1 id="pilot_button">Pilot</h1>
                 </div>
             </div>
-            <div class="qualifications">
+            <div class="qualifications" id="pil_qual">
                 <h2>Qualifications</h2>
                 <p><em>So far in my career I'ce been working as a <em>First Officer</em> flying <a href="https://en.wikipedia.org/wiki/Dassault_Falcon_2000" target="_blank">Falcon 2000</a> and before that working as a <strong>Flight Instructor</strong> and a <strong>Pilot</strong> flying arial works flights. Currently I am holding an <strong>ATPL</strong>, <strong>Class 1</strong> medical and <strong>ICAO level 5</strong> in English.</em></p>
                 <ul>
@@ -56,7 +64,7 @@
                     <li>1030 hours on Falcon 2000</li>
                 </ul>
             </div>
-            <div class="experience">
+            <div class="experience" id="pil_exp">
                 <div class="exp">
                     <h2>Previous employers</h2>
                 </div>
@@ -75,33 +83,33 @@
                     </div>
                 </div>
             </div>
-            <div class="education">
+            <div class="education" id="pil_ed">
                 <h2>Education</h2>
                 <div class="edu">
                     <h3><a href="https://lennuakadeemia.ee/en" target="_blank">Estonian Aviation Academy</a></h3>
                     <h4><em>Diploma of Higher Professional Education in Aircraft Piloting, 2010-2015</em></h4>
                 </div>
             </div>
-            <div class="language">
+            <div class="language" id="pil_lang">
                 <h2>Language skills</h2>
                 <table>
                     <thead>
                         <tr>
-                            <th scope="col">Language</th>
-                            <th scope="col">Level</th>
+                            <th scope="col"><h3>Language</h3></th>
+                            <th scope="col"><h3>Level</h3></th>
                         </tr>
                     </thead>
                     <tr>
-                        <td>Estonian</td>
-                        <td>Fluent, mother tongue</td>
+                        <td><h4>Estonian</h4></td>
+                        <td><h4>Fluent, mother tongue</h4></td>
                     </tr>
                     <tr>
-                        <td>English</td>
-                        <td>Fluent, ICAO level 5</td>
+                        <td><h4>English</h4></td>
+                        <td><h4>Fluent, ICAO level 5</h4></td>
                     </tr>
                     <tr>
-                        <td>Russian</td>
-                        <td>Basic</td>
+                        <td><h4>Russian</h4></td>
+                        <td><h4>Basic</h4></td>
                     </tr>
                 </table>
             </div>
@@ -113,12 +121,53 @@
 
             <div id="dev_banner" class="banner">
                 <div class="banner_text">
-                    <h1 id="dev_button" onclick="switchBack">Developer</h1>
+                    <h1 id="dev_button">Developer</h1>
                 </div>
             </div>
-            <div id="pic"></div>
+            <div class="qualifications" id="dev_qual">
+                <h2>Qualifications</h2>
+                <p><em>So far I have been learning Web Development on <strong>Codecademy</strong>. I have developed my skill on <strong>HTML</strong>, <strong>CSS</strong> and <strong>javaScript</strong>. Also have basic knowledge how to work with <strong>GIT's</strong>.</em></p>
+            </div>
+            <div class="experience" id="dev_exp">
+                <h2>Experience</h2>
+                <h3>I haven't aquired any work experience as a developer yet. My only experience is working on <em>Codecademy</em> projects.</h3>
+            </div>
+            <div class="education" id="dev_ed">
+                <h2>Education</h2>
+                <div class="edu">
+                    <h3><a href='https://www.codecademy.com' target="_blank">Codecademy</a></h3>
+                    <h4><em>Full-stack Engineer course, 2022</em></h4>
+                </div>
+            </div>
+            <div class="language" id="dev_lang">
+                <h2>Language skills</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col"><h3>Language</h3></th>
+                            <th scope="col"><h3>Level</h3></th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td><h4>HTML</h4></td>
+                        <td><h4>Good</h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>CSS</h4></td>
+                        <td><h4>Getting better</h4></td>
+                    </tr>
+                    <tr>
+                        <td><h4>javaScript</h4></td>
+                        <td><h4>Could be better</h4></td>
+                    </tr>
+                </table>
+            </div>
+
         </div>
         <script src="./Resources/script.js"></script>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
